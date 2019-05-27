@@ -1,10 +1,13 @@
 # rust-ckb-contract
+This is a demo, write [ckb](https://github.com/nervosnetwork/ckb) smart contract with Rust.
+
+**This project is just a POC.**
 
 ### tool chain
 
-Use nightly rust, because we need use inline asm.
+Please install nightly rust, because we need inline asm.
 
-add RISC-V target
+Add RISC-V target
 
 ```shell
 rustup target add riscv64gc-unknown-none-elf
@@ -24,8 +27,9 @@ bbl loader
 debug: Hello World!
 ```
 
-pk is modified, see [here](https://github.com/rink1969/riscv-pk/tree/ckb-pk).
+The pk is modified version, see [here](https://github.com/rink1969/riscv-pk/tree/ckb-pk).
 
 ### note
 
-There are no std for RISC-V.
+Rust has no std for RISC-V now.
+
