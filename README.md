@@ -22,9 +22,12 @@ cargo build --target riscv64gc-unknown-none-elf
 ### run
 
 ```shell
-# spike ./pk target/riscv64gc-unknown-none-elf/debug/demo
+# # spike ./pk demo aa bb cc
 bbl loader
-debug: Hello World!
+debug: demo
+debug: aa
+debug: bb
+debug: cc
 ```
 
 The pk is modified version, see [here](https://github.com/rink1969/riscv-pk/tree/ckb-pk).
