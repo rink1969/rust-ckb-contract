@@ -5,7 +5,11 @@ authors = ["rink1969 <rink1969@cryptape.com>"]
 edition = "2018"
 
 [dependencies]
+libsecp256k1 = "0.2.2"
 
+[dependencies.blake2-rfc]
+git = "https://github.com/cesarb/blake2-rfc"
+default-features = false
 
 [profile.dev]
 panic = "abort"
